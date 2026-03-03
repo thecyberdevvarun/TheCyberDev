@@ -15,7 +15,7 @@ import {
   Rss,
 } from "lucide-react";
 import Link from "next/link";
-import { footerLinks, socialLinks, stats } from "../assets/assets.js";
+import { footerLinks, socialLinks } from "../assets/assets.js";
 
 export default function Footer() {
   const darkMode = useSelector(selectDarkMode); // ← reads from Redux directly
@@ -172,14 +172,6 @@ export default function Footer() {
                   </motion.a>
                 ))}
               </div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 rounded-xl">
-                <Shield className="w-5 h-5 text-emerald-500" />
-                <span
-                  className={`text-sm font-medium ${darkMode ? "text-emerald-400" : "text-emerald-600"}`}
-                >
-                  SOC 2 Type II Certified
-                </span>
-              </div>
             </div>
 
             {/* Product */}
@@ -278,42 +270,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* ── Stats Bar ── */}
-        <div
-          className={`border-t ${darkMode ? "border-white/10" : "border-neutral-200"}`}
-        >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {stats.map((stat, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: i * 0.1 }}
-                  className="flex items-center gap-3"
-                >
-                  <div className="p-2 bg-indigo-500/10 rounded-lg shrink-0">
-                    <stat.icon className="w-5 h-5 text-indigo-500" />
-                  </div>
-                  <div>
-                    <div
-                      className={`font-bold ${darkMode ? "text-white" : "text-neutral-900"}`}
-                    >
-                      {stat.value}
-                    </div>
-                    <div
-                      className={`text-xs ${darkMode ? "text-neutral-500" : "text-neutral-400"}`}
-                    >
-                      {stat.label}
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* ── Bottom Bar ── */}
         <div
           className={`border-t ${darkMode ? "border-white/10" : "border-neutral-200"}`}
@@ -330,10 +286,9 @@ export default function Footer() {
               <div
                 className={`flex items-center gap-1.5 text-sm ${darkMode ? "text-neutral-500" : "text-neutral-400"}`}
               >
-                <span>Made with</span>
-                <Heart className="w-4 h-4 text-red-500 fill-red-500" />
+                <span>Made</span>
                 <span>for developers who</span>
-                <Sparkles className="w-4 h-4 text-indigo-500" />
+                <Heart className="w-4 h-4 text-red-500 fill-red-500" />
                 <span>security</span>
               </div>
 
@@ -357,9 +312,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        {/* ── Decorative Gradient ── */}
-        <div className="h-1 bg-linear-to-r from-indigo-600 via-purple-600 to-indigo-600" />
       </div>
     </footer>
   );

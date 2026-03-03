@@ -6,6 +6,7 @@ import Features from "../components/section/Features";
 import HowItWorks from "../components/section/HowItWorks";
 import ChallengePreview from "../components/section/ChallengePreview";
 import Leaderboard from "../components/section/Leaderboard";
+import CTA from "../components/section/CTA";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <HowItWorks />
         <ChallengePreview />
         <Leaderboard />
+        <CTA/>
       </div>
       <Footer />
     </main>
