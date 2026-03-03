@@ -3,8 +3,9 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/section/Hero";
 import Features from "../components/section/Features";
-import Footer from "../components/Footer";
 import HowItWorks from "../components/section/HowItWorks";
+import ChallengePreview from "../components/section/ChallengePreview";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
       <Navbar />
       <div className="pt-16">
         <Hero />
-        <Features/>
-        <HowItWorks/>
+        <Features />
+        <HowItWorks />
+        <ChallengePreview />
       </div>
       <Footer />
     </main>
