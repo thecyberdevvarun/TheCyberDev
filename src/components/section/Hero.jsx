@@ -14,20 +14,18 @@ import {
   Star,
   ArrowRight,
   Terminal,
-  Lock,
   Bug,
   Sparkles,
   TrendingUp,
   ChevronRight,
 } from "lucide-react";
-import { FeaturePill } from "../ui/FeaturePill";
 
 export default function Hero() {
   const darkMode = useSelector(selectDarkMode);
 
   return (
     <section
-      className={`min-h-screen flex items-center justify-center pt-24 pb-16 px-4 relative overflow-hidden transition-colors duration-300 ${
+      className={`min-h-screen flex items-center justify-center px-4 relative overflow-hidden transition-colors duration-300 ${
         darkMode ? "bg-neutral-950 text-white" : "bg-white text-neutral-900"
       }`}
     >
@@ -632,47 +630,6 @@ export default function Hero() {
             </motion.div>
           </motion.div>
         </div>
-
-        {/* ── Feature Pills ── */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-          className="mt-16 lg:mt-24"
-        >
-          <div className="flex flex-wrap justify-center gap-4">
-            <FeaturePill
-              icon={<Code2 className="w-5 h-5" />}
-              title="Monaco Editor"
-              description="VS Code experience"
-              color="indigo"
-            />
-            <FeaturePill
-              icon={<Shield className="w-5 h-5" />}
-              title="OWASP Top 10"
-              description="Real vulnerabilities"
-              color="emerald"
-            />
-            <FeaturePill
-              icon={<Flame className="w-5 h-5" />}
-              title="Streaks & XP"
-              description="Gamified learning"
-              color="orange"
-            />
-            <FeaturePill
-              icon={<Trophy className="w-5 h-5" />}
-              title="Leaderboards"
-              description="Compete globally"
-              color="yellow"
-            />
-            <FeaturePill
-              icon={<Lock className="w-5 h-5" />}
-              title="Sandboxed"
-              description="Safe testing"
-              color="green"
-            />
-          </div>
-        </motion.div>
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ export default function Features() {
   return (
     <section
       id="features"
-      className={`py-24 px-4 relative overflow-hidden transition-colors duration-500 ${
+      className={`px-4 relative overflow-hidden transition-colors duration-500 ${
         darkMode ? "bg-neutral-950 text-white" : "bg-white text-neutral-900"
       }`}
     >
