@@ -9,7 +9,6 @@ import {
   Shield,
   Heart,
   Send,
-  Sparkles,
   Lock,
   CheckCircle,
   Rss,
@@ -18,7 +17,7 @@ import Link from "next/link";
 import { footerLinks, socialLinks } from "../../assets/assets.js";
 
 export default function Footer() {
-  const darkMode = useSelector(selectDarkMode); // ← reads from Redux directly
+  const darkMode = useSelector(selectDarkMode);
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
 

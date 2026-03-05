@@ -18,7 +18,6 @@ import {
   Gift,
   Clock,
   Lock,
-  BadgeCheck,
   Rocket,
   Bell,
   Code2,
