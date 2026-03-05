@@ -1,7 +1,7 @@
 "use client";
 
 import { useSelector } from "react-redux";
-import { selectDarkMode } from "../redux/features/theme/themeSlice.js";
+import { selectDarkMode } from "../../redux/features/theme/themeSlice.js";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import {
@@ -15,7 +15,7 @@ import {
   Rss,
 } from "lucide-react";
 import Link from "next/link";
-import { footerLinks, socialLinks } from "../assets/assets.js";
+import { footerLinks, socialLinks } from "../../assets/assets.js";
 
 export default function Footer() {
   const darkMode = useSelector(selectDarkMode); // ← reads from Redux directly

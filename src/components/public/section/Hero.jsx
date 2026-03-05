@@ -1,7 +1,7 @@
 "use client";
 
 import { useSelector } from "react-redux";
-import { selectDarkMode } from "../../redux/features/theme/themeSlice.js";
+import { selectDarkMode } from "../../../redux/features/theme/themeSlice.js";
 import { motion } from "framer-motion";
 import {
   Code2,
@@ -15,9 +15,7 @@ import {
   ArrowRight,
   Terminal,
   Bug,
-  Sparkles,
   TrendingUp,
-  ChevronRight,
 } from "lucide-react";
 
 export default function Hero() {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useDispatch, useSelector } from "react-redux";
-import { selectDarkMode, toggleDarkMode } from "../redux/features/theme/themeSlice.js";
+import { selectDarkMode, toggleDarkMode } from "../../redux/features/theme/themeSlice.js";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Moon, Sun, Shield } from "lucide-react";

@@ -1,10 +1,10 @@
 "use client";
 
 import { useSelector } from "react-redux";
-import { selectDarkMode } from "../../redux/features/theme/themeSlice.js";
+import { selectDarkMode } from "../../../redux/features/theme/themeSlice.js";
 import { motion } from "framer-motion";
 import { Shield, Bug, CheckCircle, ArrowRight, Sparkles } from "lucide-react";
-import { mainFeatures } from "../../assets/assets.js";
+import { mainFeatures } from "../../../assets/assets.js";
 
 export default function Features() {
   const darkMode = useSelector(selectDarkMode);

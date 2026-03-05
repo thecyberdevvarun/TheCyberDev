@@ -1,7 +1,7 @@
 "use client";
 
 import { useSelector } from "react-redux";
-import { selectDarkMode } from "../../redux/features/theme/themeSlice.js";
+import { selectDarkMode } from "../../../redux/features/theme/themeSlice.js";
 import { motion } from "framer-motion";
 import {
   Shield,
@@ -10,7 +10,7 @@ import {
   ChevronRight,
   AlertTriangle,
 } from "lucide-react";
-import { steps } from "../../assets/assets.js";
+import { steps } from "../../../assets/assets.js";
 
 export default function HowItWorks() {
   const darkMode = useSelector(selectDarkMode);

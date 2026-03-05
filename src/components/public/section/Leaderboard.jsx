@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import { selectDarkMode } from "../../redux/features/theme/themeSlice.js";
+import { selectDarkMode } from "../../../redux/features/theme/themeSlice.js";
 import { motion } from "framer-motion";
 import {
   Trophy,
@@ -28,7 +28,7 @@ import {
   User,
   Lock,
 } from "lucide-react";
-import { topUsers, weeklyChallenge } from "../../assets/assets.js";
+import { topUsers, weeklyChallenge } from "../../../assets/assets.js";
 
 export default function Leaderboard() {
   const darkMode = useSelector(selectDarkMode);

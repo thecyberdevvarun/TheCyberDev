@@ -1,13 +1,13 @@
 "use client";
 
-import Navbar from "../components/Navbar";
-import Hero from "../components/section/Hero";
-import Features from "../components/section/Features";
-import HowItWorks from "../components/section/HowItWorks";
-import ChallengePreview from "../components/section/ChallengePreview";
-import Leaderboard from "../components/section/Leaderboard";
-import CTA from "../components/section/CTA";
-import Footer from "../components/Footer";
+import Navbar from "../components/public/Navbar";
+import Hero from "../components/public/section/Hero";
+import Features from "../components/public/section/Features";
+import HowItWorks from "../components/public/section/HowItWorks";
+import ChallengePreview from "../components/public/section/ChallengePreview";
+import Leaderboard from "../components/public/section/Leaderboard";
+import CTA from "../components/public/section/CTA";
+import Footer from "../components/public/Footer";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         <HowItWorks />
         <ChallengePreview />
         <Leaderboard />
-        <CTA/>
+        <CTA />
       </div>
       <Footer />
     </main>
